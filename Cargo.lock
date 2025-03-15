@@ -4,14 +4,25 @@ version = 4
 
 [[package]]
 name = "endify"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
- "endify-derive",
+ "endify-derive 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "endify-derive"
-version = "0.1.0"
+version = "0.1.1"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "endify-derive"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "43525e53cb0dac5009d8321cab907bd5d76c7c42ee0ec6c3827dff45dd668837"
 dependencies = [
  "proc-macro2",
  "quote",
