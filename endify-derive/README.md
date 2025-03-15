@@ -1,3 +1,3 @@
 # endify-derive
 
-placeholder for easy endianess conversion of structs.
+proc-macro to derive the `endify` trait.
