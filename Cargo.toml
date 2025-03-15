@@ -1,12 +1,4 @@
-[package]
-name = "endify"
-version = "0.1.0"
-edition = "2024"
-license = "MIT"
-readme = "README.md"
-description = "PLACEHOLDER"
-repository = "https://github.com/hannahfluch/endify"
-authors = ["Hannah Fluch"]
-keywords = ["endianess"]
+[workspace]
+members = ["endify", "endify-derive"]
 
-[dependencies]
+resolver = "2"
