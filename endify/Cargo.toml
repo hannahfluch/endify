@@ -1,12 +1,15 @@
 [package]
 name = "endify"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT"
 readme = "README.md"
-description = "PLACEHOLDER"
+description = "effortlessly convert structs between endian-formats."
 repository = "https://github.com/hannahfluch/endify"
 authors = ["Hannah Fluch"]
-keywords = ["endianess"]
+keywords = ["endianess", "no-std", "little-endian", "big-endian", "byte"]
+categories = ["encoding", "parsing", "no-std"]
+
 
 [dependencies]
+endify-derive = "0.1.1"

@@ -1,12 +1,18 @@
 [package]
 name = "endify-derive"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT"
-readme = "README.md"
-description = "PLACEHOLDER"
+description = "derive proc-macro for `endify`"
 repository = "https://github.com/hannahfluch/endify"
 authors = ["Hannah Fluch"]
-keywords = ["endianess"]
+keywords = ["endianess", "no-std", "little-endian", "big-endian", "byte"]
+categories = ["encoding", "parsing", "no-std"]
+
+[lib]
+proc-macro = true
 
 [dependencies]
+proc-macro2 = "1.0.94"
+quote = "1.0.40"
+syn = "2.0.100"
