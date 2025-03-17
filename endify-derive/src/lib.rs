@@ -37,9 +37,8 @@ fn gen_method(input: &DeriveInput, method_name: &str) -> proc_macro2::TokenStrea
             syn::Fields::Named(fields) => {
                 let conversions = fields.named.iter().map(|field| {
                     let ident = field.ident.as_ref().unwrap();
-                    let ty = &field.ty;
                     quote! {
-                        #ident: #ty::#method_ident(self.#ident)
+                        #ident: Endify::#method_ident(self.#ident)
                     }
                 });
                 quote! {
@@ -52,11 +51,10 @@ fn gen_method(input: &DeriveInput, method_name: &str) -> proc_macro2::TokenStrea
             }
             // tuple structs
             syn::Fields::Unnamed(fields) => {
-                let conversions = fields.unnamed.iter().enumerate().map(|(i, field)| {
-                    let ty = &field.ty;
+                let conversions = fields.unnamed.iter().enumerate().map(|(i, _)| {
                     let index = syn::Index::from(i);
                     quote! {
-                        #ty::#method_ident(self.#index)
+                        Endify::#method_ident(self.#index)
                     }
                 });
                 quote! {

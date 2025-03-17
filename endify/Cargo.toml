@@ -1,6 +1,6 @@
 [package]
 name = "endify"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 license = "MIT"
 readme = "README.md"
@@ -12,4 +12,4 @@ categories = ["encoding", "parsing", "no-std"]
 
 
 [dependencies]
-endify-derive = "0.1.1"
+endify-derive = "0.1.2"
