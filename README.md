@@ -1,4 +1,5 @@
 # endify
+[![Crates.io Version](https://img.shields.io/crates/v/endify)](https://crates.io/crates/endify)
 
 Effortlessly convert structs between endianess-formats.
 
